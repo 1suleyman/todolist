@@ -1,0 +1,183 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure html and body take up full height of viewport */
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100%;
+    background-color: aqua
+}
+/* side */
+.acontainer{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    margin: 30px;
+    border-radius: 20px;
+}
+.side-title{
+    display: flex;
+    margin: 20px;
+    background-color: aqua;
+    border-radius: 30px;
+}
+.side-title img{
+    width: 40px;
+    padding: 10px;
+}
+.side-points {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    margin: 30px;
+    border-radius: 30px;
+    padding: 20px;
+}
+.side-list h3{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 30px;
+}
+.side-list{
+    display: flex;
+}
+.side-list h3:hover{
+    cursor: pointer;
+    background-color: greenyellow
+}
+.side-list img{
+    width: 40px;
+    padding: 10px 20px;
+}
+/* main */
+.bcontainer{
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    background-color: aliceblue;
+    margin: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+/* home */
+.home {
+    /* container for the home screen */
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    background-color: aqua;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.hometitle{
+    /* where the today title and date goes */
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+}
+.homeboxes{
+    /* where the tasks boxes will go in */
+
+}
+
+/* add task */
+.addtask{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    padding: 20px;
+    margin: 5% 20% 15% 20%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.task-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+.task-form label {
+    margin-top: 10px;
+}
+
+.task-form input, .task-form textarea, .task-form select, .task-form button {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.task-form button {
+    margin-top: 20px;
+    background-color: aliceblue;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.task-form button:hover {
+    background-color: greenyellow;
+}
+
+/* projects */
+.projects{
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 30px;
+    overflow-y: scroll;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+}
+.project{
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+}
+.project-form{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+}
+.project-form label, button{
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+/* responsive */
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+    .container{
+       display: flex;
+       flex-direction: column;
+       
+    }
+    /* make it so you can scroll down for the bcontainer */
+  }
